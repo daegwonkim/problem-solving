@@ -54,7 +54,7 @@ students.sort(key=lambda s: s.score, reverse=True)
 ```
 
 ### ④ 정렬 + 탐색 조합 (Binary Search)
-정렬 후 이진 탐색으로 값 존재 여부 판단.
+정렬 후 이진 탐색으로 값 존재 여부 판단
 ```python
 arr = sorted(arr)
 # bisect 모듈 활용
@@ -63,7 +63,7 @@ exists = bisect.bisect_left(arr, target) < len(arr) and arr[bisect.bisect_left(a
 ```
 
 ### ⑤ 정렬 + 투 포인터 조합
-“두 수의 합”처럼 정렬된 상태에서 양 끝 포인터를 이동.
+“두 수의 합”처럼 정렬된 상태에서 양 끝 포인터를 이동
 ```python
 arr.sort()
 l, r = 0, len(arr) - 1
